@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Array from './Array';
+import List from './Components/List';
+import Map from './Components/Map';
+import { Counter } from './Counter';
+import Employee from './Employee';
 
+// const employeeInfo = [
+//   {
+//     id : "1",
+//     firstName : "Keerthana",
+//     lastName : "Velumani",
+//     age : "21"
+//   },
+//   {
+//     id : "2",
+//     firstName : "Sundar",
+//     lastName : "mani",
+//     age : "53"
+//   },
+//   {
+//     id : "3",
+//     firstName : "Tharini",
+//     lastName : "Karthikeyan",
+//     age : "30"
+//   }
+// ]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         {/* <List /> */}
+         {/* <Map /> */}
+         <Array />
+      {/* {employeeInfo.map((employee) =>{ */}
+        {/* // const {firstName , lastName ,age} = employee; */}
+
+        {/* return (
+          <Employee firstName={firstName} lastName={lastName} age={age} />
+          <Employee key={employee.employeeId} {...employee} />
+        ) */}
+      {/* })} */}
+      {/* <Counter /> */}
+      <br/>
+      {/* <Employee name="Keerthana" age="22"/>
+      <Employee name="Sundar Aathman" age="51"/>
+      <Employee name="Harini" age="12"/> */}
     </div>
   );
 }
